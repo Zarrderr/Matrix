@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Matrix
 {
 
@@ -9,16 +10,37 @@ namespace Matrix
         static void Main(string[] args)
         {
 
+            Cikles raw = new Cikles();
+            Variator ruf = new Variator();
+
+            ruf.Question();
 
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            int num = 1;
+            string key = Console.ReadKey().Key.ToString();
+            if (key.ToUpper() == "Y")
+                Console.WriteLine("User typed 'Y'!");
+            else
+                Console.WriteLine("НУ И ЛАДНО");
 
-            while (num < 1000000000000000000)
+
+
+
+
+
+            if (key.ToUpper() == "Y")
+                raw.Matry();
+            else
+                Shelnax();
+
+
+
+
+                static void Shelnax() 
             {
-                Console.Write(num);
-                num++;
+                Console.Write("НУ И ПОШЕЛ НА ХУЙ");
             }
+
+
 
 
 
